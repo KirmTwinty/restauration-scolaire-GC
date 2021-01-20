@@ -1,0 +1,61 @@
+#+TITLE: Tarification de la restauration scolaire à Gétigné
+#+AUTHOR: T. Toullier - Gétigné Collectif
+
+Outil de visualisation des données de la restauration scolaire dans la ville de Gétigné. L'outil permet aussi d'établir de nouvelles tarifications.
+
+Les données sont publiques, obtenues auprès de la mairie.
+
+* Installation
+
+1. Télécharger l'ensemble de la source 
+2. Ouvrez le fichier =index.html= dans un navigateur récent.
+
+Pour utiliser cet outil, il est nécessaire d'avoir =Javascript= activé sur son navigateur.
+
+* Outil de visualisation et de simulation
+
+** Graphiques
+Plusieurs graphiques sont représentés : 
+- Pour 2020
+  - Distribution des enfants par quotient familial
+  - Répartition du prix d'un repas
+- Comparaison de la tarification en 2020 avec d'autres villes alentours
+- Visualisation d'une simulation de tarification 
+
+** Simulation
+
+Pour ouvrir les paramètres de simulation, cliquer sur le bouton =Paramètres= en haut à gauche de l'écran.
+Un menu devrait apparaître sur la gauche.
+
+La simulation permet deux types de tarification et de représenter les résultats pour une année type ou pour le prix d'un repas seul @@html:<sup>@@ [[#myfootnote1][1]] @@html:</sup>@@.
+
+*** Tarification au taux d'effort
+La tarification au taux d'effort est un *coefficient multiplicateur* à appliquer au quotient familial.
+
+#+NAME: fig:tauxeffort
+[[./img/taux_effort.svg]]
+
+Où le quotient familial est donné par :
+
+#+NAME: fig:qf
+[[./img/QF.svg]]
+
+Un *seuil bas* et un *seuil haut* sont aussi paramétrable pour limiter l'action du taux d'effort sur les tranches les plus basses et les plus hautes respectivement.
+
+*Exemple :* preset =La Montagne=
+
+*** Tarification personnalisé
+
+Il est aussi possible de mettre n'importe quelle expression mathématique, fonction du quotient familial dénoté par =x=. Cette expression est à entrer dans le champ correspondant.
+
+*Exemple :* preset =Nantes=
+
+
+#+HTML: <a name="myfootnote1">1</a>: UNAF (2014) UNAF - Une année de cantine en primaire coûte en moyenne 522€ pour un enfant. Disponible sur : <a href="https://www.unaf.fr/spip.php?article17651">https://www.unaf.fr/spip.php?article17651</a> (Consulté le : 21 septembre 2020)
+
+
+* TODO Liste des choses à faire
+Le code est facilement perfectible, toute contribution est la bienvenue.
+- [-] Généraliser l'importation des données (en brut ici) pour n'importe quelle ville
+- [-] Nettoyage de code
+
