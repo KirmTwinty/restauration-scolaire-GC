@@ -51,11 +51,11 @@ Il est aussi possible de mettre n'importe quelle expression mathématique, fonct
 *Exemple :* preset =Nantes=
 
 
-#+HTML: <a name="myfootnote1">1</a>: UNAF (2014) UNAF - Une année de cantine en primaire coûte en moyenne 522€ pour un enfant. Disponible sur : <a href="https://www.unaf.fr/spip.php?article17651">https://www.unaf.fr/spip.php?article17651</a> (Consulté le : 21 septembre 2020)
-
-
 * TODO Liste des choses à faire
 Le code est facilement perfectible, toute contribution est la bienvenue.
 - [-] Généraliser l'importation des données (en brut ici) pour n'importe quelle ville
 - [-] Nettoyage de code
 
+* Références
+
+#+HTML: <a name="myfootnote1">1</a>: UNAF (2014) UNAF - Une année de cantine en primaire coûte en moyenne 522€ pour un enfant. Disponible sur : <a href="https://www.unaf.fr/spip.php?article17651">https://www.unaf.fr/spip.php?article17651</a> (Consulté le : 21 septembre 2020)
